@@ -1,0 +1,42 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API для навчального процесу",
+  "license": "ISC",
+  "author": "Anhelina Zhmurkevych",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/main.js",
+    "dev": "nodemon",
+    "dev:inspect": "nodemon -e ts,json --exec node --inspect=localhost:9222 -r ts-node/register src/main.ts",
+    "lint": "eslint ./src/**",
+    "lint:fix": "eslint ./src/** --fix",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "bcryptjs": "^3.0.3",
+    "body-parser": "^2.2.2",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "inversify": "^8.1.0",
+    "reflect-metadata": "^0.2.2",
+    "tslog": "^4.10.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@typescript-eslint/eslint-plugin": "^8.57.2",
+    "@typescript-eslint/parser": "^8.57.2",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
